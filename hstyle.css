@@ -284,4 +284,35 @@ height: 20px;
 		font-size: 18px;
 	}
 }
-      
+
+/* sell css */
+
+.sellbtn{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* margin: 100px; */
+  margin-top: -10px;
+  margin-left: 47%;
+ font: bold;
+  font-size: 200%;
+  border-radius: 12px;
+  background-color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-color: white;
+  /* border-width: 10px; */  
+}
+.sellbtn:hover{
+  background-color: black;
+  color: aqua;
+  border-color: aqua;
+  border-radius: 12px;
+  
+}
+
+.asellbtn{
+  text-decoration: none;
+}
