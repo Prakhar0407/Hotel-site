@@ -1,0 +1,30 @@
+[
+    {
+        "full_name": "Eric Fahenedrena",
+        "email_address": "eric_fahendrena@gmail.com",
+        "type": "Jh",
+        "password": "qwerty",
+        "date_day": "Gg",
+        "date_month": "Jj",
+        "date_year": "Jjkk",
+        "Members": "Single",
+        "payment_method": "card",
+        "card_number": "Ddj",
+        "card_cvc": "Bejejd",
+        "terms": "on"
+    },
+    {
+        "full_name": "Eric Fahenedrena",
+        "email_address": "eric_fahendrena@gmail.com",
+        "type": "Jh",
+        "password": "qwerty",
+        "date_day": "Gg",
+        "date_month": "Jj",
+        "date_year": "Jjkk",
+        "Members": "Single",
+        "payment_method": "card",
+        "card_number": "Ddj",
+        "card_cvc": "Bejejd",
+        "terms": "on"
+    }
+]
