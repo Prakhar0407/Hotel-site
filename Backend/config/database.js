@@ -1,12 +1,9 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-
+MONGODB_URL = "mongodb+srv://admin:Debajyoti%402003@cluster0.rrwl60a.mongodb.net/food";
 exports.connect = () => {
-  mongooose
-    .connect(process.env.MONGODB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
+  mongoose
+    .connect(MONGODB_URL)
     .then(() => console.log("DB connected successfully"))
     .catch((error) => {
       console.log("DB connection failed");
