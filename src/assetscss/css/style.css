@@ -1,0 +1,339 @@
+header{
+    width: 100%;
+    height: 100vh;
+    /* {"background":"linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('assets/elements/pexels-pixabay-258154.jpg')"} */
+    /* background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('assetscss/images/pexels.jpg'); */
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+     
+    }
+    .logo a{
+        font-size: 1.8em;
+        letter-spacing: 2px;
+        color: aqua;
+        text-decoration: none;
+        /* color: aqua; */
+        
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 2opx;
+    }
+    .menu a:hover{
+        /* background-color: aqua; */
+        color: aqua;
+        box-shadow: 0 0 14px;
+        letter-spacing: 1.2px;
+        border-radius: 12px;
+    }
+    .heading{
+        color: white;
+        font-size: 80px;
+        text-align: center;
+        padding: 100px;
+    }
+    .signin a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: aqua;
+         border-radius: 15px;
+
+      
+       
+       
+        
+    }
+    .signin a:hover{
+        /* background-color: black;
+        color: aqua;
+        border-color: aqua;
+       box-shadow: 0 0 15px;
+       /* border-color: aqua; */
+
+       background-color: black;
+       color: aqua;
+       border-color: white;
+       border-radius: 12px;
+       /* border-color: white; */
+       box-shadow: 0 0 5px;
+
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        /* background: white; */
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    /* .navbar{
+        background-color: grey;
+        padding: 15px 10px;
+    }
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    .navbar ul{
+        overflow: auto;
+        margin: auto;
+    }
+    .navbar li a{
+        padding: 5.5px;
+    text-decoration: none;
+    color: aqua;
+    align-items: center;
+    /* margin: 0px 9px; */
+    
+    /* } */
+    
+    @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+    
+    .search-box {
+      font-size: 20px;
+      border: solid 0.3em aqua;
+      display: inline-block;
+      position: relative;
+      border-radius: 2.5em;
+    }
+    .search-box input[type=text] {
+      font-family: inherit;
+      font-weight: bold;
+      width: 2.5em;
+      height: 2.5em;
+      padding: 0.3em 2.1em 0.3em 0.4em;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 2.5em;
+      transition: width 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+    }
+    .search-box input[type=text]:focus {
+      outline: none;
+    }
+    .search-box input[type=text]:focus, .search-box input[type=text]:not(:placeholder-shown) {
+      width: 18em;
+      transition: width 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    .search-box input[type=text]:focus + button[type=reset], .search-box input[type=text]:not(:placeholder-shown) + button[type=reset] {
+      transform: rotate(-45deg) translateY(0);
+      transition: transform 300ms ease-out 300ms;
+    }
+    .search-box input[type=text]:focus + button[type=reset]:after, .search-box input[type=text]:not(:placeholder-shown) + button[type=reset]:after {
+      opacity: 1;
+      transition: top 350ms ease-out 300ms, right 300ms ease-out 300ms, opacity 300ms ease 30s0ms;
+    }
+    .search-box button[type=reset] {
+      background-color: transparent;
+      width: 1.4em;
+      height: 1.4em;
+      border: 0;
+      padding: 0;
+      outline: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0.55em;
+      right: 0.55em;
+      transform: rotate(-45deg) translateY(2.2em);
+      transition: transform 150ms ease-out 150ms;
+    }
+    .search-box button[type=reset]:before, .search-box button[type=reset]:after {
+      content: "";
+      background-color: aqua;
+      width: 0.3em;
+      height: 1.4em;
+      position: absolute;
+    }
+    .search-box button[type=reset]:after {
+      transform: rotate(90deg);
+      opacity: 0;
+      transition: transform 150ms ease-out, opacity 150ms ease-out;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+    
+    .container{
+        margin: 318px 0px;
+        background-color: black;
+    
+    }
+    
+    /* img{
+    height: 20px;
+    } */
+    
+    .row{
+        width: 100%;
+        /* display: flex; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .image{
+        background: #50A7FF;
+        position: relative;
+        flex: 1;
+        max-width: 420px;
+        height: 300px;
+        margin: 20px;
+        overflow: hidden;
+    }
+    
+    .image img{
+        opacity: 0.8;
+        position: relative;
+        vertical-align: top;
+        transition: 0.3s;
+        transition-property: opacity;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    .image:hover img{
+        opacity: 1;
+    }
+    
+    .image .details{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image .details h2{
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 70px;
+        transition: 0.4s;
+        transition-property: transform;
+    }
+    
+    .image .details h2 span{
+        font-weight: 900;
+    }
+    
+    .image:hover .details h2{
+        transform: translateY(-30px);
+    }
+    
+    .image .details p{
+        margin: 30px 30px 0 30px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        opacity: 0;
+        transition: 0.6s;
+        transition-property: opacity, transform;
+    }
+    
+    .image:hover .details p{
+        opacity: 1;
+        transform: translateY(-40px);
+    }
+    
+    .more{
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        bottom: -60px;
+        transition: 0.6s;
+        transition-property: bottom;
+    }
+    
+    .image:hover .more{
+        bottom: 0;
+    }
+    
+    .more .read-more{
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+    .more .read-more span{
+        font-weight: 900;
+    }
+    
+    .more .icon-links i{
+        color: #000;
+        font-size: 20px;
+    }
+    
+    .more .icon-links a:not(:last-child) i{
+        margin-right: 20px;
+    }
+    
+    /* Responsive CSS */
+    
+    @media (max-width: 1080px){
+        .image{
+            flex: 100%;
+            max-width: 480px;
+        }
+    }
+    
+    @media (max-width: 400px){
+        .image .details p{
+            font-size: 16px;
+        }
+    
+        .more .read-more, .more .icon-links a i{
+            font-size: 18px;
+        }
+    }
+    
+    /* sell css */
+    
+    .sellbtn{
+      display: flex;
+      flex-direction: column;
+      padding: 3px 20px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      /* margin: 100px; */
+      margin-top: -10px;
+      margin-left: 47%;
+     font: bold;
+      font-size: 200%;
+      border-radius: 12px;
+      background-color: aqua;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border-color: white;
+      /* border-width: 10px; */  
+    }
+    .sellbtn:hover{
+      background-color: black;
+      color: aqua;
+      border-color: aqua;
+      border-radius: 12px;
+      
+    }
+    
+    .asellbtn{
+      text-decoration: none;
+    }
+    
