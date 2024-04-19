@@ -15,15 +15,7 @@ function HomePage() {
   <style dangerouslySetInnerHTML={{__html: `
     /* CSS styles */
     /* Reset CSS */
-    * {
-        // margin: 0px 100px -10px -10px;
-        padding: -100px 100px 100px 100px;
-        box-sizing: border-box;
-        position:relative;
-        left:-6px;
-    
-  
-    }
+   
     /* Navbar styles */
     .navbar {
         background-color: #333;
@@ -49,7 +41,7 @@ function HomePage() {
 
     /* Home content styles */
     .home-content {
-        background-color: #222;
+        background-color: #white;
         color: white;
         padding: 100px 100px 100px 100px;
         margin : 0px -100px 100px -100px;
