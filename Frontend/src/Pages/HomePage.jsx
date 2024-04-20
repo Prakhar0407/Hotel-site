@@ -2,21 +2,28 @@ import HomeLayout from "../Layouts/HomeLayout";
 import { Link } from "react-router-dom";
 import HomePageImage from "../Assets/Images/hotel.svg";
 import "../Pages/timer.js";
+import "../Helpers/Fixed.js";
 // import React from 'react';
 <script src="timer.js"></script>
 
 function HomePage() {
   return (
+
     <HomeLayout>
-   <div>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <style dangerouslySetInnerHTML={{__html: `
+      <header>
+        <h1>abcd</h1>
+      </header>
+      <div>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <style dangerouslySetInnerHTML={{
+          __html: `
     /* CSS styles */
     /* Reset CSS */
    
     /* Navbar styles */
+
     .navbar {
         background-color: #333;
         padding: 10px;
@@ -181,62 +188,194 @@ function HomePage() {
     font-size: 40px;
 
   }
+
+
+
+
+
+.containerBox {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 10px 0;
+  
+  
+}
+
+.containerBox .card {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+ 
+}
+
+.containerBox .card:hover{
+  background-color: aqua;
+
+}
+.containerBox .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.containerBox .card:hover .content {
+	transform: translateY(-27px);
+}
+
+.containerBox .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.containerBox .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.containerBox .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.containerBox .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.containerBox .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.containerBox .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.containerBox .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+  
+}
+
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
   
 ` }} />
-  <header>
-    {/* Navbar content */}
-    {/* <nav className="navbar">
+        <header>
+          {/* Navbar content */}
+          {/* <nav className="navbar">
       <ul>
         <li><a href="/courses">Get Started</a></li>
         <li><a href="/contact">Contact Us</a></li>
       </ul>
     </nav> */}
-  </header>
-  <section className="home-content">
-    {/* Home content */}
-    <h1 class="heading">Hotrizon Inn</h1>
-    <div className="container">
-      <div className="content-left">
-        <h1>explore our <span className="highlight">Exquisite Hotel</span></h1>
-        <p>Experience an Exquisite Hotel Immersed in Rich History and Timeless Elegance.</p>
-        <div className="buttons">
-          <a href="/courses" className="button-primary">Get Started</a>
-          <a href="/contact" className="button-secondary">Contact Us</a>
-        </div>
+        </header>
+        <section className="home-content">
+          {/* Home content */}
+          <h1 class="heading">Hotrizon Inn</h1>
+          <div className="container">
+            <div className="content-left">
+              <h1>explore our <span className="highlight">Exquisite Hotel</span></h1>
+              <p>Experience an Exquisite Hotel Immersed in Rich History and Timeless Elegance.</p>
+              <div className="buttons">
+                <a href="/courses" className="button-primary">Get Started</a>
+                <a href="/contact" className="button-secondary">Contact Us</a>
+              </div>
+              <section>
+                <div className="containerBox">
+                  <a href="/basicroom"><div className="card">
+                    <div className="content">
+                      <div className="contentBx">
+                        <h3>Basic Room</h3>
+                      </div>
+                    </div>
+                    <div className="timing_1"><span class="num" data-val="350">000</span></div>
 
-        <div className="roomsButtons">
-          <a href="/basicroom" className="basic-room-button">Basic Room</a>
-          <div className="timing_1"><span class="num" data-val="350">000</span></div>
-          <a href="/luxuryroom" className="luxury-room-button">Luxury Room</a>
-          <div className="timing_2"><span class="num" data-val="200">000</span></div>
-          <a href="/occasionalroom" className="occasional-room-button">Occassional Room</a>
-          <div className="timing_3"><span class="num" data-val="150">000</span></div>
-        </div>
+                  </div>
+                  </a>
 
-        
+                  <a href="/luxuryroom"> <div className="card">
+                    <div className="content">
 
-  
+                      <div className="contentBx">
+                        <h3>Luxury Room</h3>
+                      </div>
+                    </div>
+                    <div className="timing_1"><span class="num" data-val="350">000</span></div>
+
+                  </div>
+                  </a>
+
+                  <a href="occassionalroom"><div className="card">
+                    <div className="content">
+                      <div className="contentBx">
+                        <h3>Occassional Room</h3>
+                      </div>
+                    </div>
+                    <div className="timing_1"><span class="num" data-val="350">000</span></div>
+
+                  </div>
+                  </a>
+                </div>
+              </section>
 
 
 
 
+
+
+            </div>
+
+            <div className="w-1/2 flex items-center justify-center">
+              <img alt="homepage image" src={HomePageImage} />
+            </div>
+
+
+
+
+
+          </div>
+        </section>
+        <footer>
+          {/* Footer content */}
+        </footer>
+        {/* Include any JavaScript files */}
       </div>
-      
-        <div className="w-1/2 flex items-center justify-center">
-          <img alt="homepage image" src={HomePageImage} />
-      </div>
-
-
-
-
-
-    </div>
-  </section>
-  <footer>
-    {/* Footer content */}
-  </footer>
-  {/* Include any JavaScript files */}
-</div>
 
     </HomeLayout>
   );
