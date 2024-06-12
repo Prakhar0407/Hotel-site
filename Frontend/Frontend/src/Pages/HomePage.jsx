@@ -2,7 +2,7 @@ import HomeLayout from "../Layouts/HomeLayout";
 import { Link } from "react-router-dom";
 import HomePageImage from "../Assets/Images/hotel.svg";
 import "../Pages/timer.js";
-// import "../Helpers/Fixed.js";
+import "../Helpers/Fixed.js";
 // import React from 'react';
 <script src="timer.js"></script>
 
@@ -11,6 +11,7 @@ function HomePage() {
 
     <HomeLayout>
       <header>
+        <h1>abcd</h1>
       </header>
       <div>
         <meta charSet="UTF-8" />

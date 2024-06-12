@@ -13,7 +13,7 @@ function Sell() {
     }}>
       <form method="post" action="sell.php">
         <div className="row">
-          <h4 style={{ color: 'green' }}>Account</h4>
+          <h4 style={{ color: 'aqua' }}>Account</h4>
           <div className="input-group input-group-icon">
             <input type="text" name="full_name" placeholder="Full Name" style={inputStyle} />
             <div className="input-icon"><i className="fa fa-user"></i></div>
@@ -46,30 +46,23 @@ function Sell() {
               </div>
             </div>
           </div>
-          </div>
           <div className="col-half">
             <h4>Members</h4>
-  
-            <div>
-  <style dangerouslySetInnerHTML={{__html: "\n.btn-group .button {\n  background-color: #04AA6D; /* Green */\n  border: 1px solid green;\n  color: white;\n  padding: 15px 32px;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 16px;\n  cursor: pointer;\n  float: left;\n}\n\n.btn-group .button:not(:last-child) {\n  border-right: none; /* Prevent double borders */\n}\n\n.btn-group .button:hover {\n  background-color: #3e8e41;\n}\n" }} />
-  <div className="btn-group">
-    <button className="button">Single</button>
-    <button className="button">Family</button>
-  </div>
-</div>
-       </div>    
-<div className="tnc">
-  <style dangerouslySetInnerHTML={{__html:"\n .tnc {\n float: left"} }></style>
-
-   <div className="row">
+            <div className="input-group">
+              <input id="Members-single" type="radio" name="Members" value="Single" />
+              <label htmlFor="Members-single" style={radioLabelStyle}>Single</label>
+              <input id="Members-family" type="radio" name="Members" value="family" />
+              <label htmlFor="Members-family" style={radioLabelStyle}>Family</label>
+            </div>
+          </div>
+        </div>
+        <div className="row">
           <h4>Terms and Conditions</h4>
           <div className="input-group">
             <input id="terms" name="terms" type="checkbox"  />
-            <label htmlFor="terms">I accept he terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+            <label htmlFor="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
           </div>
         </div>
-       </div>
-
 
         {/* <!--Button to submit the form--> */}
         <div className="row">
@@ -77,7 +70,6 @@ function Sell() {
         </div>
       </form>
     </div>
-   
   );
 }
 
@@ -92,7 +84,6 @@ const inputStyle = {
   transition: 'all 0.35s ease-in-out',
   outline: 'none'
 };
-
 
 const radioLabelStyle = {
   display: 'inline-block',
@@ -112,7 +103,7 @@ const checkboxStyle = {
 };
 
 const buttonStyle = {
-  backgroundColor: 'green',
+  backgroundColor: 'aqua',
   color: '#fff',
   padding: '1em',
   borderRadius: '3px',
